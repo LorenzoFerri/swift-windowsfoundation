@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "swift-windowsfoundation",
     products: [
-        .library(name: "WindowsFoundation", type: .dynamic, targets: ["WindowsFoundation"]),
+        .library(name: "WindowsFoundation", type: .static, targets: ["WindowsFoundation"]),
     ],
     dependencies: [
         .package(url: "https://github.com/thebrowsercompany/swift-cwinrt", branch: "main"),
